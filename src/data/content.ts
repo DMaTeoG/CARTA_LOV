@@ -92,7 +92,7 @@ export const birthdayContent: BirthdayContent = { // Exporta el objeto principal
   },
   footer: { note: "2025 Con carino para Kimberly" }, // Nota final mostrada en el pie de pagina
   audio: { // Configuracion del reproductor de audio opcional
-    src: "/happy.mp3", // Ruta del archivo de audio
+    src: "/tiempo.mp3", // Ruta del archivo de audio
     playLabel: "Reproducir cancion", // Texto accesible para el boton de reproducir
     pauseLabel: "Pausar cancion", // Texto accesible para el boton de pausar
     description: "Cancion favorita de Estefania para el cumpleanos", // Descripcion del audio
@@ -103,7 +103,7 @@ export const birthdayContent: BirthdayContent = { // Exporta el objeto principal
     hero: true, // Renderiza el encabezado
     letter: true, // Muestra la carta principal
     photos: false, // Oculta los rieles de fotos
-    timeline: false, // Oculta la linea del tiempo
+    timeline: true, // Oculta la linea del tiempo
     memories: false, // Oculta la galeria de memorias
     audio: true, // Oculta el reproductor de audio
     share: true, // Muestra los botones de compartir
@@ -111,7 +111,7 @@ export const birthdayContent: BirthdayContent = { // Exporta el objeto principal
     loveMessage: true, // Activa el mensaje de amor neon
   },
   loveMessage: { // Configuracion del mensaje neon
-    text: "TE AMO ", // Texto mostrado en el efecto neon
+    text: " DISCULPA ME", // Texto mostrado en el efecto neon
     color: "#ff5f9e", // Color glow del mensaje neon
     repeatCount: 7, // Cantidad de repeticiones del mensaje en pantalla
   },
