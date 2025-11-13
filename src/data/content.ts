@@ -2,7 +2,7 @@ import type { BirthdayContent } from "@/lib/types"; // Interfaz que valida la es
 
 export const birthdayContent: BirthdayContent = { // Objeto principal con los datos demo
   theme: { palette: "auroraPastel" }, // Paleta neutra y luminosa
-  typography: { title: "Playfair Display", body: "Inter" }, // Tipografias legibles y elegantes
+  typography: { title: "Playfair Display", body: "Architects Daughter" }, // Tipografias legibles y elegantes
   effects: { // Efectos visuales para la demo
     confetti: true,
     hearts: true,
