@@ -2,7 +2,8 @@ export type PaletteOption =
   | "dulcePastel"
   | "champanElegante"
   | "atardecerSuave"
-  | "nocturnoElegante";
+  | "nocturnoElegante"
+  | "auroraPastel";
 
 export type TitleFontOption =
   | "DM Serif Display"

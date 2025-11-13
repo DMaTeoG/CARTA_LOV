@@ -1,36 +1,58 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Carta de cumpleanos interactiva
 
-## Getting Started
+Aplicacion Next.js que genera una carta de cumpleanos con efectos visuales, linea del tiempo, fotos laterales y reproductor de audio. Todo el contenido vive en un unico archivo (`src/data/content.ts`), lo que permite personalizarlo sin tocar componentes.
 
-First, run the development server:
+## Requisitos
+
+- Node.js 18.17+ (recomendado LTS mas reciente)
+- npm 9+ o el gestor equivalente (yarn, pnpm, bun)
+
+## Instalacion
+
+1. Clona o descarga este repositorio.
+2. Instala dependencias:
+   ```bash
+   npm install
+   ```
+
+## Uso basico
+
+1. Levanta el servidor de desarrollo:
+   ```bash
+   npm run dev
+   ```
+2. Abre `http://localhost:3000` en el navegador.
+3. Ajusta el contenido en `src/data/content.ts`. Cambia textos, imagenes y toggles (`sections`) segun necesites.
+4. El sitio se actualiza automaticamente al guardar.
+
+## Demo guiada
+
+1. Arranca el modo desarrollo (`npm run dev`).
+2. Al cargar la pagina deberias ver:
+   - Encabezado con el titulo "Feliz cumple, Demo".
+   - Efecto de confeti/corazones si la seccion de efectos esta activa.
+   - Carta con efecto maquina de escribir (puedes pausar/reproducir audio demo).
+   - Rieles de fotos y linea del tiempo con informacion generica.
+3. Desplazate hasta el mosaico de memorias y verifica el boton de compartir.
+4. Opcional: modifica valores en `sections` para ocultar/mostrar bloques y recarga para comprobarlos.
+
+## Personalizar contenido
+
+1. Abre `src/data/content.ts`.
+2. Reemplaza textos de `hero`, `letter`, `timeline`, `photos`, `memories` y `loveMessage`.
+3. Cambia rutas de imagen por archivos propios dentro de `public/`.
+4. Ajusta los toggles en `sections` para activar solo lo necesario.
+5. Si necesitas otra combinacion cromatica, crea un nuevo valor en `theme.palette` y actualiza el tema en tu capa de estilos.
+
+## Construir y desplegar
 
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+npm run build
+npm run start
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Deploy sugerido: Vercel (importa el repo y establece `npm run build` como comando). Cualquier plataforma compatible con Next.js 14 funcionara.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Limpieza de datos
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+El archivo de contenido ya esta "blanqueado" con datos demo. Antes de compartir una version publica, revisa nuevamente textos, imagenes y audios para evitar referencias personales.

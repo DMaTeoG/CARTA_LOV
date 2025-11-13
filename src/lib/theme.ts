@@ -48,6 +48,15 @@ export const paletteTokens: Record<
     border: "border-[#4E4E6A]",
     bokeh: ["rgba(15,52,96,0.45)", "rgba(22,33,62,0.4)", "rgba(74,85,162,0.35)"],
   },
+  auroraPastel: {
+    background: "bg-gradient-to-br from-[#c8f4ff] via-[#fdf3ff] to-[#ffe3f1]",
+    backgroundAccent: "bg-[#ffffff]/60",
+    text: "text-[#2e2a39]",
+    ink: "text-[#4d3f52]",
+    highlight: "bg-[#f9d3ff]",
+    border: "border-[#ecc7f3]",
+    bokeh: ["rgba(200,244,255,0.4)", "rgba(253,243,255,0.45)", "rgba(255,227,241,0.35)"],
+  },
 };
 
 export function themeClassNames(palette: PaletteOption) {
